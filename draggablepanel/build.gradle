@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'checkstyle'
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+  compile 'com.android.support:support-v4:20.0.0'
   compile 'com.nineoldandroids:library:2.4.0'
 }
 
@@ -28,6 +28,7 @@ android {
   lintOptions {
     abortOnError false
   }
+    buildToolsVersion '25.0.0'
 }
 
 apply from: 'https://raw.github.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle'

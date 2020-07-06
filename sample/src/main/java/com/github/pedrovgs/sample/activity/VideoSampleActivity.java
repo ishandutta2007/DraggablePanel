@@ -21,13 +21,15 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.VideoView;
-import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.OnClick;
+
 import com.github.pedrovgs.DraggableListener;
 import com.github.pedrovgs.DraggableView;
 import com.github.pedrovgs.sample.R;
 import com.squareup.picasso.Picasso;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
 
 /**
  * Sample activity created to show a video using a VideoView.
@@ -36,14 +38,9 @@ import com.squareup.picasso.Picasso;
  */
 public class VideoSampleActivity extends FragmentActivity {
 
-  private static final String APPLICATION_RAW_PATH =
-      "android.resource://com.github.pedrovgs.sample/";
-  private static final String VIDEO_POSTER =
-      "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/the-amazing-spider-"
-          + "man-2-poster-rhino.jpg";
-  private static final String VIDEO_THUMBNAIL =
-      "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/the-amazing-spider-"
-          + "man-2-poster-green-goblin.jpg";
+  private static final String APPLICATION_RAW_PATH = "android.resource://com.github.pedrovgs.sample/";
+  private static final String VIDEO_POSTER = "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/the-amazing-spider-" + "man-2-poster-rhino.jpg";
+  private static final String VIDEO_THUMBNAIL = "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/the-amazing-spider-" + "man-2-poster-green-goblin.jpg";
   private static final String VIDEO_TITLE = "The Amazing Spider-Man 2: Rise of Electro";
 
   @InjectView(R.id.draggable_view) DraggableView draggableView;
